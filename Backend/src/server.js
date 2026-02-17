@@ -29,3 +29,7 @@ process.on("uncaughtException", (err) => {
   console.error(`Uncaught Exception: ${err.message}`);
   process.exit(1);
 });
+
+
+const cookieParser = require("cookie-parser");
+app.use(cookieParser());
